@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai2.css">
+</head>
+
+<body>
+    <div class="khung">
+        <form action="">
+            <div class="text">
+                <legend>Họ và tên: </legend>
+                <input tabindex="1" type="text" name="" id="text">
+            </div>
+
+            <div class="text">
+                <fieldset>
+                    <legend>Giới tính: </legend> <br>
+                    <input tabindex="2" type="radio" name="gt" id="ab" checked>
+                    <label for="ab">Nam</label>
+                    <input tabindex="3" type="radio" name="gt" id="c">
+                    <label for="c">Nữ</label>
+                </fieldset>
+            </div>
+
+            <div class="text">
+                <label for="">Ngày sinh:</label> <br>
+                <input tabindex="4" type="date" name="" id="text">
+            </div>
+
+            <div class="text">
+                <label for="">Điểm:</label> <br>
+                <input tabindex="5" type="number" min="0" max="10" step="0.25" name="" id="text">
+            </div>
+
+            <div class="text">
+                <label for="browser">Nghề nghiệp:</label> <br>
+                <input tabindex="6" list="browsers" name="list" id="text">
+                <datalist id="browsers">
+                  <option value="Làm nông">
+                  <option value="Coder">
+                  <option value="Thợ mộc">
+                  <option value="Game thủ">
+                  <option value="Kinh doanh">
+                </datalist>
+            </div>
+
+            <div class="text">
+                <fieldset>
+                    <legend>Sở thích: </legend> <br>
+                    <input tabindex="7" type="checkbox" name="st" id="q">
+                    <label for="q">Thể thao</label>
+                    <input tabindex="7" type="checkbox" name="st" id="w">
+                    <label for="w">Du lịch</label>
+                    <input tabindex="7" type="checkbox" name="st" id="e">
+                    <label for="e">Âm nhạc</label>
+                    <input tabindex="7" type="checkbox" name="st" id="r">
+                    <label for="r">Ẩm thực</label>
+                </fieldset>
+            </div>
+
+            <div class="text">
+                <label for="">Ghi chú: </label> <br>
+                <textarea tabindex="8" name="" id="text" cols="30" rows="10"></textarea>
+                <hr>
+            </div>
+
+            <div class="text">
+                <button tabindex="9" class="nut">Thêm</button>
+                <button tabindex="10" class="nut">Sửa</button>
+                <button disabled="disabled" class="nut">Xoá</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
